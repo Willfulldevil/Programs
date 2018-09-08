@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+	<bean id="Ajay" class="com.Maven.mapfact.Vamshi">
+		<property name="maps">
+			<util:map map-class="java.util.HashMap">
+				<entry key="A" value="11" />
+				<entry key="B" value="22" />
+				<entry key="C" value="33" />
+			</util:map>
+		</property>
+	</bean>
+
+</beans>

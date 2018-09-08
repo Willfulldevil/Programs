@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="BaseServiceUsa" abstract="true">
+		<property name="country" value="Usa" />
+	</bean>
+
+	<bean id="SimpleBean" parent="BaseServiceUsa" class="com.Maven.core.Pavan">
+		<property name="action" value="buy" />
+		<property name="type" value="F1" />
+	</bean>
+
+</beans>
